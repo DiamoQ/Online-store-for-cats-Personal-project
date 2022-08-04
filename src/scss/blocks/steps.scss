@@ -58,19 +58,19 @@
   }
 
   &--1 {    
-    background: url(../../img/step-back-1.svg) no-repeat right;
+    background: url(./img/step-back-1.svg) no-repeat right;
   }
 
   &--2 {    
-    background: url(../../img/step-back-2.svg) no-repeat right;
+    background: url(./img/step-back-2.svg) no-repeat right;
   }
 
   &--3 {    
-    background: url(../../img/step-back-3.svg) no-repeat right;
+    background: url(./img/step-back-3.svg) no-repeat right;
   }
 
   &--4 {
-    background: url(../../img/step-back-4.svg) no-repeat right;    
+    background: url(./img/step-back-4.svg) no-repeat right;    
   }
 
   @include desctopePoint {
