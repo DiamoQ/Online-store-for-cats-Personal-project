@@ -1,0 +1,165 @@
+.description-container {
+  display: flex;
+  margin-bottom: 71px;
+
+  @include desctopePoint {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include tablets {
+    flex-direction: column;
+  }
+}
+
+.description__part {
+  padding: 71px 52px 55px;
+  background-color: #f2f2f2;
+  max-width: 570px;
+  max-height: 374px;
+  margin-right: 80px;
+  position: relative;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include desctopePoint {
+    margin-right: 0;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include tablets {
+    padding: 68px 62px 57px 52px;
+    max-width: 708px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-height: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include phones {
+    padding: 30px 20px 22px 19px;
+  }
+}
+
+.description__part-name {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 27px;
+
+  @include tablets {
+    margin-bottom: 19px;
+  }
+
+  @include phones {
+    margin-bottom: 29px;
+  }
+}
+
+.description__icon {
+  position: absolute;
+  max-width: 100px;
+
+    &--cat {
+      top: 41px;
+    }
+
+    &--pantera {
+      left: 32px;
+      top: 50px;
+      max-width: 134px;
+    }
+
+    @include tablets {
+      max-width: 200px;
+      max-height: 225px;
+      right: 60px;
+      top: 80px;
+      left: auto;
+
+      &--pantera {
+        max-width: 268px;
+        max-height: 200px;
+        right: 28px;
+        top: 93px;
+      }
+    }
+
+    @include phones {
+      &--cat {
+        max-width: 50px;
+        left: 24px;
+        top: 21px;
+      }
+
+      &--pantera {
+        height: 50px;
+        left: 15px;
+        top: 25px;
+      }
+    }
+  }
+
+.description__name {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 39px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--left {
+    padding-left: 20px;
+  }
+
+  &--right {
+    padding-left: 65px;
+  }
+
+  @include tablets {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  @include phones {
+    font-size: 24px;
+    padding-left: 78px;
+  }
+}
+
+.description__part-text {
+  margin-bottom: 27px;
+  font-family: Arial, sans-serif;
+
+  @include tablets {
+    padding-right: 205px;
+    margin-bottom: 56px;
+
+    &--pantera {
+      padding-right: 241px;
+    }
+  }
+
+  @include phones {
+    padding-right: 83px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 19px;
+  }
+}
+
+.description__part-link {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}

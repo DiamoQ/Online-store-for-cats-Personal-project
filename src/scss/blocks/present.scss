@@ -1,0 +1,18 @@
+.present {
+  height: 100vh;
+  background: url(../../img/present-background.png) right;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50% 100%;
+  margin-bottom: 82px;
+
+  @include tablets {
+    background: none;
+  }
+
+  @include phones {
+    background: url(../../img/present-background-mobile.png) no-repeat;
+    background-position-y: 88px;
+    background-size: 100%;
+  }
+}

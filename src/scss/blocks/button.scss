@@ -1,0 +1,16 @@
+.meet__button-link {
+  text-transform: uppercase;
+  color: white;
+  padding: 14px 26px;
+  background-color: #68B738;
+  font-size: 20px;
+
+  @include tablets {
+    position: relative;
+    z-index: 4;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
